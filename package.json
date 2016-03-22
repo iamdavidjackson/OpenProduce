@@ -12,6 +12,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.4",
     "gulp-util": "^2.2.14",
+    "http-server": "^0.9.0",
     "ionic": "^1.7.14",
     "ios-sim": "^5.0.7",
     "shelljs": "^0.3.0"
@@ -28,6 +29,7 @@
     "ios"
   ],
   "scripts": {
-    "start": "ionic build ios & ionic emulate ios"
+    "start": "http-server -o -p 8888 ./www",
+    "build": "ionic build ios & ionic emulate ios"
   }
 }
