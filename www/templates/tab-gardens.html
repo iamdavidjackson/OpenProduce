@@ -1,0 +1,14 @@
+<ion-view view-title="Gardens">
+  <ion-content class="padding">
+    <ion-list>
+    <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="garden in gardens" type="item-text-wrap" href="#/tab/garden/{{garden.$id}}">
+      <img ng-src="{{garden.img}}">
+      <h2>{{garden.name}}</h2>
+      <p>{{garden.description}}</p>
+      <i class="icon ion-chevron-right icon-accessory"></i>
+    </ion-item>
+  </ion-list>
+  <button class="button button-icon ion-plus" ng-click="addGarden()">
+      </button>
+  </ion-content>
+</ion-view>
